@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Art Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">PRABH</div>
+
+        <div class="nav-links">
+            <a href="#">HOME</a>
+            <a href="#artworks">ARTWORKS</a>
+            <a href="#about">ABOUT</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+
+    </nav>
+
+<section class="hero">
+
+    <img class="hero-image" src="images/56Landscape51__57044.jpg">
+
+    <div class="hero-text">
+
+        <p class="hero-small">WELCOME TO MY ART WORLD</p>
+
+        <h1>PRABH</h1>
+
+        <p class="hero-description">
+            Original paintings, portraits and artistic stories.
+        </p>
+
+        <a href="#artworks" class="hero-button">
+            VIEW ARTWORKS
+        </a>
+
+    </div>
+
+</section>
+
+<div class="artworks-heading">
+    <p>SELECTED WORKS</p>
+    <h2>ARTWORKS</h2>
+</div>
+
+    <div class="gallery" id="artworks">
+       <div class="art-card">
+
+    <img src="images/56Landscape51__57044.jpg" onclick="openImage(this.src)">
+    <h3>Landscape</h3>
+
+    <p>Original Painting</p>
+
+    <strong>₹8,000</strong>
+
+    <a href="#" class="details-button" onclick="openDetails(1); return false;">
+    VIEW DETAILS
+</a>
+
+</div>
+       <div class="art-card">
+
+    <img src="images/56Landscape53__75642 (1).jpg" onclick="openImage(this.src)">
+
+    <h3>Landscape II</h3>
+
+    <p>Original Painting</p>
+    
+    <strong>₹8,000</strong>
+     
+    <a href="#" class="details-button" onclick="openDetails(2); return false;">
+    VIEW DETAILS
+</a>
+
+</div>
+       <div class="art-card">
+
+    <img src="images/20250708_130513.jpg" onclick="openImage(this.src)">
+
+    <h3>Untitled I</h3>
+
+    <p>Original Painting</p>
+    
+    <strong>₹8,000</strong>
+
+    <a href="#" class="details-button" onclick="openDetails(3); return false;">
+    VIEW DETAILS
+</a>
+
+</div>
+       <div class="art-card">
+
+    <img src="images/20250717_111635.jpg" onclick="openImage(this.src)">
+
+    <h3>Untitled II</h3>
+
+    <p>Original Painting</p>
+   
+    <strong>₹8,000</strong>
+
+    <a href="#" class="details-button" onclick="openDetails(4); return false;">
+    VIEW DETAILS
+</a>
+
+</div>
+       <div class="art-card">
+
+    <img src="images/20250717_165032.jpg" onclick="openImage(this.src)">
+
+    <h3>Untitled III</h3>
+
+    <p>Original Painting</p>
+
+    <strong>₹8,000</strong>
+
+    <a href="#" class="details-button" onclick="openDetails(5); return false;">
+    VIEW DETAILS
+</a>
+</div>
+       <div class="art-card">
+
+    <img src="images/20250728_173655 (1).jpg" onclick="openImage(this.src)">
+
+    <h3>Untitled IV</h3>
+
+    <p>Original Painting</p>
+ 
+    <strong>₹8,000</strong>
+
+    <a href="#" class="details-button" onclick="openDetails(6); return false;">
+    VIEW DETAILS
+</a>
+
+</div>
+       <div class="art-card">
+
+    <img src="images/20250825_173344.jpg" onclick="openImage(this.src)">
+
+    <h3>Untitled V</h3>
+
+    <p>Original Painting</p>
+
+    <strong>₹8,000</strong>
+ 
+    <a href="#" class="details-button" onclick="openDetails(7); return false;">
+    VIEW DETAILS
+</a>
+
+</div>
+       <div class="art-card">
+
+    <img src="images/20250911_153158.jpg" onclick="openImage(this.src)">
+
+    <h3>Untitled VI</h3>
+
+    <p>Original Painting</p>
+
+    <strong>₹8,000</strong> 
+
+    <a href="#" class="details-button" onclick="openDetails(8); return false;">
+    VIEW DETAILS
+</a>
+
+</div>
+    </div>
+
+<section class="about" id="about">
+
+    <div class="about-text">
+
+        <p class="about-small">ABOUT THE ARTIST</p>
+
+        <h2>PRABH</h2>
+
+        <p>
+            I am an artist and painter who loves turning ideas,
+            emotions and stories into paintings.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <p class="contact-small">GET IN TOUCH</p>
+
+    <h2>CONTACT</h2>
+
+    <p>
+        Interested in an artwork, commission or collaboration?
+    </p>
+
+    <a href="mailto:your@email.com" class="contact-button">
+        EMAIL ME
+    </a>
+
+</section>
+    
+<div id="lightbox" onclick="closeImage()">
+
+        <span class="close">&times;</span>
+
+        <img id="largeImage">
+
+    </div>
+
+<div id="details-popup">
+
+    <div class="details-popup-content">
+
+        <button class="details-close" onclick="closeDetails()">x</button>
+
+        <div class="details-popup-image">
+
+            <img id="details-image" src="images/56Landscape51__57044.jpg">
+        </div>
+
+        <div class="details-popup-info">
+
+            <p>ORIGINAL ARTWORK</p>
+
+            <h2 id="details-title">Landscape</h2>
+
+            <p>Original Oil Painting</p>
+
+            <h3 id="details-price">₹8,000</h3>
+
+            <a href="#contact" class="details-buy">
+                ENQUIRE TO BUY
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+   <script src="script.js"></script>
+
+<footer>
+
+    <h2>PRABH</h2>
+
+    <p>Artist • Painter • Creator</p>
+
+    <div class="social-links">
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <p class="copyright">© 2026 Prabh. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+
+</html>
